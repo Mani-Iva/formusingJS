@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACUCAMAAAAj+tKkAAAAY1BMVE
+    X///8AAADW1tbb29spKSm5ublpaWkmJiawsLCQkJDe3t7KysoVFRXDw8M1NTV7e3uhoaHo6Oj29vbu7u5bW1s/Pz9HR0chISFwcHBNTU2KioqXl5djY2NTU1MvLy8cHBwMDAy1loYeAAAEgUlEQVR4nO2c65riIAyGe9BR27GV1tazM/d/levMuC5QkkA57bPL91OlfRtISICalXkcLTJNJcD/CXBXFp5V7a0Al7pt5ustAVoqAdoqAdoqAdoqAdrKKSCr7FX23gCLYbFyoMVRQHQHWOeuNHQ+ALs3xa1maucDsHLHl49mgF3PWM9ZHQD8dAd4MgGsdsdb05zaHcMBI3Vxdz78/v5+6TDArLy74rvxBDhgPfANR4YBZuXVDd9FP8zUK7HpWGGAfoQBLicPN/Z/E6Aq8p4jAh6kb7YHBeBHFQ9wI/Gp49olGuBZ/LxW2e+hty4S4EX8eKvGy/OGxQGU7FdAfPmhigIo9+8KwHsoCqDMB+Pl9xhd3IofFQsEcIgAqBdfnjqHDzOy/TC8b6SwgHuJr8aTpiZDAOu1EzHhomuJD7dfXiOAm3eisaaGLWzPgkg6v4crAHhxg/elCuKrCRv8hCM1IBvgdqY6AnwlUfc824Wt6gz6t0VrEta4A7yq+YhWL3cHxuDZHWCh7F/CAsdXZQwAdkdHeIedAo/0Dy5cgnFwuXEitf0+cD7er8LOJD8qtPs3DiDlH2JcCg9YEfZ764SfBwcsiPEnpRPBASugfnvZT24QGLAk5lCpf4MDUvv7E/sFBqyM7RcWsCDGnzLvCQhYYfXbQ1eF/UICzunfkIBUiqnOysIBUvZT9y8CyNpmYaFPaUIoifGniC84IPXAlKQBVRH5PWg/cJ+kdcs3t39BQGZXFUsDnhH12x7G81PVSQZhI8EnbSrrAPZ7+Ho0n3gHcvxheKCTgKvGtOTxR+Sne2T8IYDZcu4odNq/COBjaq/nSFororztllHyO5OwE8FH2c8zICP8A40vAQCpNTLKP3wDUv6h0b9eARmRP5/oS3gFdOAfXgGpFcabzvjzCOhm/PkD7In+PWnz+QHsifin6R/eANmN4GP0NXwC9oR/jLr+gQP29VZXtdDQVXwhALfD4V1Twuks0j9GMz4IcHoMCJbgkm77FwTsTFJ+/ggHVSuMJv6BAJoUTSv+ngTfYGo/sOwkFpJ58UndDv+pQXwmAE0Kd26TmpiAhxl8kJNQsZYTd1d8l9nYPzDAjG1OjY7uXBXXoxmCuX+ggHOEbiE1ov20rekScKNvvx5eb/MIiLhII/pHf5UPOIYARIKnFP+6U5TXNeAgOIj9+3VKOwYguEl/l+z3FcIiAILLWBP/yOMAQuec7tP+jQMIzI6yfzynqAiA6oW2RjwZ9TpNEh5QvdMqzx+vKT48oHIaaaUZ7c95ofCAilR1NTma5/CtsG57bklxyf7krOx4VJwcdAeol7FyB47FKmux2SqTK3eAWGKiasE90GLcgJmfM0BqcXnSon+u9jbtukTuFvq1Nc6C3/GtrRmeiDoDxJP3lzgn6S8X5UE3T4BU/fiUzjaCJ8DsrLMV9m5aR7p8fbde72iZFmr/1wvQPpQAbZUAbZUAbZUAbZUAbZUAbZUAbZUAbZUAbZUAbZUAbZUAbZUAbZUAbfWPA/r/q93S7q92gyoBJsCnfgGvel2DuS3OzQAAAABJRU5ErkJggg==">
+</head>
+<body>
+    <div id="overlay">
+        <form onsubmit="validateform(); event.preventDefault()">
+            <h1>Contact Us</h1>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <small class="error"> </small>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your email">
+            <small class="error">   </small><br>
+            <small class="error">   </small>
+
+            <label for="pwd">Password</label>
+            <input type="pwd" id="pwd" placeholder=" Password">
+            <small class="error"> </small><br>
+            <small class="error">   </small>
+
+            
+            <label for="number">Phone number</label>
+            <input type="tel" id="number" placeholder=" Enter your Number">
+            <small class="error"> </small>
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your message"></textarea>
+            <small class="error">   </small>
+
+
+           <br><input type="submit" value="send message">
+            </div>
+        </form> 
+        <p id="success"> </p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
